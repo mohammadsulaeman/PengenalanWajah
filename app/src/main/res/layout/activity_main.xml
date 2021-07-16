@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/java_camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="420dp" />
+    <Button
+        android:id="@+id/take_picture_button"
+        style="?metaButtonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/teal_200"
+        android:textColor="@android:color/white"
+        android:text="Memotret"
+        android:layout_below="@id/java_camera_view"/>
+    <LinearLayout
+        android:id="@+id/linearLayoutfooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/take_picture_button">
+        <TextView
+            android:id="@+id/textnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select nama Karyawan:"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+        <ListView
+            android:id="@+id/listdata"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/editNamakry"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:paddingTop="12dp"
+            android:hint="nama"
+            android:textColorHint="@color/black"
+            android:textSize="15dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/submitdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/teal_700"
+            android:text="Kirim"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

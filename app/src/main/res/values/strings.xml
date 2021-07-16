@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PengenalanWajah</string>
+    <string name="selectnama">Nama Pemilik Wajah</string>
+    <string name="isinama">Tuliskan Nama Anda</string>
+    <string name="detect">Mengenali</string>
+    <string name="izindiberikan">Izin diberikan</string>
+    <string name="duolarang">Beberapa Wajah Tidak diperbolehkan</string>
+    <string name="wajahdetect">Wajah Terdeteksi</string>
+    <string name="wajahtakkenal">Wajah Tidak Dikenal</string>
+    <string name="tolakijin">Izin ditolak.</string>
+    <string name="tidakdapatmendeteksiwajah">Tidak Dapat Mendeteksi Wajah</string>
+</resources>
